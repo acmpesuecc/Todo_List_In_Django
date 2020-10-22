@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>PRIORITY TODO LIST</title>
+    </head>
+    <body>
+        <h1>Todo List App</h1>
+
+        <!-- Todo - Add action and method attributes to below form -->
+        <!-- Todo - Make a post request to url add/ with info provided by user -->
+        <form>
+            <!-- Todo - Add csrf_token for security -->
+            <label>Title</label><br>
+            <input type="text" name="title" id="title" /><br>
+            <label>Content</label><br>
+            <input type="text" name="content" id="content" /><br>
+            <label>Priority</label>
+
+            <!-- Todo - Add options 1, 2, 3 to the dropdown menu below to set priority -->
+            <select id="priority" name="priority">
+            </select>
+            <br>
+
+            <input type="submit" value="Create">
+        </form>
+        <hr>
+
+        <h2>Priority 1</h2>
+        <ul>
+            <!-- Todo - List Only Todos with Priority 1 -->
+            {% for todo in todos %}
+            <li>
+                <div>
+                    <!-- Todo - Add action and method attributes to below form -->
+                    <!-- Todo - The form makes a post request to delete/id to delete the todo from the Database -->
+                    <form>
+                        <!-- Todo - Add csrf_token for security -->
+                        <!-- Todo - List title of todo -->
+                        title:
+                        <br>
+                        <!-- Todo - List content of todo -->
+                        Content:
+                        <br>
+                        <!-- Todo - List priority of todo -->
+                        Priority:
+                        <br>
+                        <!-- Todo - List timestamp of todo -->
+                        Created on:
+                        <br>
+                        <!-- Todo - Create a submit button with value Delete -->
+                    </form>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <hr>
+
+        <h2>Priority 2</h2>
+        <ul>
+            <!-- Todo - List Only Todos with Priority 2 -->
+            {% for todo in todos %}
+            <li>
+                <div>
+                    <!-- Todo - Add action and method attributes to below form -->
+                    <!-- Todo - The form makes a post request to delete/id to delete the todo from the Database -->
+                    <form>
+                        <!-- Todo - Add csrf_token for security -->
+                        <!-- Todo - List title of todo -->
+                        title:
+                        <br>
+                        <!-- Todo - content title of todo -->
+                        Content:
+                        <br>
+                        <!-- Todo - List priority of todo -->
+                        Priority:
+                        <br>
+                        <!-- Todo - List timestamp of todo -->
+                        Created on:
+                        <br>
+                        <!-- Todo - Create a submit button with value Delete -->
+                    </form>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+        <hr>
+
+        <h2>Priority 3</h2>
+        <ul>
+            <!-- Todo - List Only Todos with Priority 3 -->
+            {% for todo in todos %}
+            <li>
+                <div>
+                    <!-- Todo - Add action and method attributes to below form -->
+                    <!-- Todo - The form makes a post request to delete/id to delete the todo from the Database -->
+                    <form>
+                        <!-- Todo - Add csrf_token for security -->
+                        <!-- Todo - List title of todo -->
+                        title:
+                        <br>
+                        <!-- Todo - List content of todo -->
+                        Content:
+                        <br>
+                        <!-- Todo - List priority of todo -->
+                        Priority:
+                        <br>
+                        <!-- Todo - List timestamp of todo -->
+                        Created on:
+                        <br>
+                        <!-- Todo - Create a submit button with value Delete -->
+                    </form>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
