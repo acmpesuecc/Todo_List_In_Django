@@ -3,9 +3,9 @@ from . import views
 
 urlpatterns = [
     # Todo - create path to index view
-    path('', , name='index'),
+    path('', views.index , name='index'),
     # Todo - create path to add view
-    path('add/', , name='add'),
+    path('add/',views.add , name='add'),
     # Todo - create path to delete view, must take 'id'(integer) as parameter in url
-    path('delete/', , name='delete')
+    path('delete/', views.delete , name='delete')
 ]
