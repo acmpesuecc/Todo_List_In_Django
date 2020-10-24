@@ -13,6 +13,7 @@ def index(request):
     # Todo - render index.html file with todos
     return render(request, 'index.html',context)
 
+
 # Todo create add view
 def add(request):
 
