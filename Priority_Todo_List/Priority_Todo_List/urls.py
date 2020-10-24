@@ -19,7 +19,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     # Todo - Include path to todo.urls for ''
-    path('', ),
+    path('', include('Todo.urls')),
     # Todo - Include path to todo.urls for 'todo/'
-    path('todo/', )
+    path('todo/', include('Todo.urls')),
 ]
