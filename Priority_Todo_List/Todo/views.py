@@ -26,7 +26,7 @@ def add(request):
 
 
 # Todo Create the delete view
-def delete(request):
+def delete(request,id):
     # Todo - Add id parameter to function
     # Todo - Accept request only if it is a post request
     # Todo - Delete todo Object from DB
