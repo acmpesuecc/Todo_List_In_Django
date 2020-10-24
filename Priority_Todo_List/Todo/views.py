@@ -3,16 +3,15 @@ from .models import Todo
 
 # Todo create index view
 def index(request):
-
     # Todo - Get all todos from DB
-    todos = ""
+    todos = Todo.objects.all()
 
     context = {
         "todos": todos
     }
 
     # Todo - render index.html file with todos
-    return render(request, 'index.html')
+    return render(request, 'index.html',context)
 
 # Todo create add view
 def add(request):
