@@ -8,7 +8,8 @@ class Todo(models.Model):
     title = models.CharField(max_length=255)
 
     # Todo create a content attribute -> text
-    content = models.CharField(max_length=1000)
+    # max_length only enforced in Admin, not in any client-rendered form
+    content = models.TextField(max_length=1000)
 
     # Todo create a created_at attribute -> timestamp
     created_at = models.DateTimeField(auto_now_add=True)
