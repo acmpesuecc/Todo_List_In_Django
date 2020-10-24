@@ -6,10 +6,10 @@
     <body>
         <h1>Todo List App</h1>
 
-        <!-- Todo - Add action and method attributes to below form -->
-        <!-- Todo - Make a post request to url add/ with info provided by user -->
-        <form>
-            <!-- Todo - Add csrf_token for security -->
+        <form action='/add' method='post'>
+
+            {% csrf_token %}
+
             <label>Title</label><br>
             <input type="text" name="title" id="title" /><br>
             <label>Content</label><br>
@@ -17,7 +17,10 @@
             <label>Priority</label>
 
             <!-- Todo - Add options 1, 2, 3 to the dropdown menu below to set priority -->
-            <select id="priority" name="priority">
+            <select>
+              <option value="1" selected> 1 </option>
+              <option value="2" > 2 </option>
+              <option value="3" > 3 </option>
             </select>
             <br>
 
