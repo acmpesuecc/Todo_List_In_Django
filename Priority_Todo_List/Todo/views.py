@@ -32,5 +32,7 @@ def delete(request):
     # Todo - Accept request only if it is a post request
     # Todo - Delete todo Object from DB
     # Todo - Redirect to the '/todo' page
-
+    if request.method=="POST":
+            Todo.objects.filter(id=id).delete()
+            return redirect('/todo')
     return render(request, 'index.html')
